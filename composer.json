@@ -1,0 +1,10 @@
+{
+    "name": "xivo/super-framework",
+    "authors": [
+        {
+            "name": "David",
+            "email": "dmoreno788@gmail.com"
+        }
+    ],
+    "require": {}
+}
