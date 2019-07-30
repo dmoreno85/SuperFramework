@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class CreateUsers extends AbstractMigration
+class CreatePost extends AbstractMigration
 {
     /**
      * Change Method.
@@ -31,13 +31,13 @@ class CreateUsers extends AbstractMigration
      */
     public function change()
     {
-        $users= $this->table('users');
-        $users->addColumn('name','string',['limit'=>80]);
-        $users->addColumn('email','string',['limit'=>80]);
-        $users->addColumn('password','string',['limit'=>100]);
-        // $users->addColumn('age','number', ['limit'=>10,'null'=>true]);
-        $users->addColumn('created_at','datetime');
-        $users->addColumn('update_at','datetime',['null'=>true]);
-        $users->create();
+        $post= $this->table('post');
+        $post->addColumn('titulo','string',['limit'=>80]);
+        $post->addColumn('descripcion','string',['limit'=>510]);
+        $post->addColumn('autor','string',['limit'=>100]);
+        
+        $post->addColumn('created_at','datetime');
+        $post->addColumn('update_at','datetime',['null'=>true]);
+        $post->create();
     }
 }

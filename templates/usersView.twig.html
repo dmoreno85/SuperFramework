@@ -1,0 +1,101 @@
+{% extends "template.twig.html" %}
+{% block body %}
+
+<h1>USERS</h1>
+ <div class="container bootstrap snippet">
+    <div class="panel-body inf-content">
+            {% for user in users %}
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="" style="width:300px;" title="" class="img-circle img-thumbnail isTooltip" src="https://api.adorable.io/avatars/300/{{user.name}}" data-original-title="Usuario"> 
+                <ul title="Ratings" class="list-inline ratings text-center">
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <strong>Information</strong><br>
+                <div class="table-responsive">
+                <table class="table table-condensed table-responsive table-user-information">
+                    <tbody>
+                        <!-- <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                    Identificacion                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                123456789     
+                            </td>
+                        </tr>  -->
+                        <tr>    
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-user  text-primary"></span>    
+                                    Name                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                              {{user.name}}   
+                            </td>
+                        </tr>
+                        <!-- <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-cloud text-primary"></span>  
+                                    Lastname                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                Bootstrap  
+                            </td>
+                        </tr>  -->
+     
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                    Email                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                {{user.email}} 
+                            </td>
+                        </tr>
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                    created                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                {{users.created_at|date('d-m-Y')}}
+                            </td>
+                        </tr>
+                        <tr>        
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                    Modified                                                
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                 {{users.update_at|date('d-m-Y')}}
+                            </td>
+                        </tr>                                    
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}    
+    </div>
+    </div>     
+  
+                                 
+{% endblock %}
