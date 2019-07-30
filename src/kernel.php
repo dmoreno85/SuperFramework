@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Kint;
 
 use App\routing\Web;
 use \DI\Container;

@@ -13,7 +13,6 @@ class UsersController extends Controller{
     {
         $user = $this->doctrineManager->em->getRepository(User::class)->findAll();
 
-        \Kint::dump($user);
         $this->viewManager->renderTemplate('usersView.twig.html',['users'=>$user]);
     }
 }

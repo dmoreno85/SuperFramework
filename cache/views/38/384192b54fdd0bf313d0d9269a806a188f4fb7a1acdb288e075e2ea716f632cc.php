@@ -48,8 +48,8 @@ class __TwigTemplate_0fc6a7d8791c67f4f3d18ac9b137c5eaeb810d8a953942fb5893ff95905
         $macros = $this->macros;
         // line 3
         echo "
-<h1>USERS</h1>
- <div class=\"container bootstrap snippet\">
+<div id=\"users\" class=\"container bootstrap snippet\">
+        <h1>USERS</h1>
     <div class=\"panel-body inf-content\">
             ";
         // line 7

@@ -48,10 +48,32 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 </head>
 
 <body>
+        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+                <a class=\"navbar-brand\" href=\"/\">Home</a>
+                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                  <span class=\"navbar-toggler-icon\"></span>
+                </button>
+                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+                  <ul class=\"navbar-nav\">
+                    <li class=\"nav-item active\">
+                      <a class=\"nav-link\" href=\"./users\">Usuarios <span class=\"sr-only\">(current)</span></a>
+                    </li>
+                    <li class=\"nav-item\">
+                      <a class=\"nav-link\" href=\"./post\">Posts</a>
+                    </li>
+                    <!-- <li class=\"nav-item\">
+                      <a class=\"nav-link\" href=\"#\">Pricing</a>
+                    </li>
+                    <li class=\"nav-item\">
+                      <a class=\"nav-link disabled\" href=\"#\">Disabled</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </nav>
     ";
-        // line 14
+        // line 36
         $this->displayBlock('body', $context, $blocks);
-        // line 16
+        // line 38
         echo "    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"
         integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\">
     </script>
@@ -66,11 +88,11 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 </html>";
     }
 
-    // line 14
+    // line 36
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 15
+        // line 37
         echo "    ";
     }
 
@@ -81,7 +103,7 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 
     public function getDebugInfo()
     {
-        return array (  74 => 15,  70 => 14,  55 => 16,  53 => 14,  38 => 1,);
+        return array (  96 => 37,  92 => 36,  77 => 38,  75 => 36,  38 => 1,);
     }
 
     public function getSourceContext()

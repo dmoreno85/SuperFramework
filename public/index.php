@@ -5,6 +5,6 @@ use App\kernel;
 
 
 $kernel = new kernel();
-kint::dump($kernel);
+
 
 $kernel->init();

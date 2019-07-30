@@ -48,7 +48,7 @@ class __TwigTemplate_3fe2959ae370e383bd757911ab799d3715f1a98eb07f0e19864e167ec8f
         $macros = $this->macros;
         // line 3
         echo "<!-- Page Content -->
-<div class=\"container\">
+<div id=\"post\" class=\"container\">
     <div class=\"row\">
         <!-- Blog Entries Column -->
         <div class=\"col-md-8\">

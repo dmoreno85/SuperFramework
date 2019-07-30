@@ -47,7 +47,7 @@ class __TwigTemplate_fa9bad6fad14c682c319e15fa80daa73aaf6398fbc0328421c2006bc73b
     {
         $macros = $this->macros;
         // line 3
-        echo "<h1>Hello my GOD</h1>
+        echo "<h1>Bienvenidos al Home</h1>
 ";
     }
 
