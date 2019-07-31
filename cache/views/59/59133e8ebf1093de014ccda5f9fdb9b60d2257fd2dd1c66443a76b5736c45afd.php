@@ -48,6 +48,7 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 </head>
 
 <body>
+  <header>
         <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
                 <a class=\"navbar-brand\" href=\"/\">Home</a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -61,19 +62,20 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
                     <li class=\"nav-item\">
                       <a class=\"nav-link\" href=\"./post\">Posts</a>
                     </li>
-                    <!-- <li class=\"nav-item\">
-                      <a class=\"nav-link\" href=\"#\">Pricing</a>
-                    </li>
                     <li class=\"nav-item\">
+                      <a class=\"nav-link\" href=\"./register\">Register</a>
+                    </li>
+                    <!-- <li class=\"nav-item\">
                       <a class=\"nav-link disabled\" href=\"#\">Disabled</a>
                     </li> -->
                   </ul>
                 </div>
               </nav>
+            </header>
     ";
-        // line 36
-        $this->displayBlock('body', $context, $blocks);
         // line 38
+        $this->displayBlock('body', $context, $blocks);
+        // line 40
         echo "    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"
         integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\">
     </script>
@@ -88,11 +90,11 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 </html>";
     }
 
-    // line 36
+    // line 38
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 37
+        // line 39
         echo "    ";
     }
 
@@ -103,7 +105,7 @@ class __TwigTemplate_126819ccc1308268e9dec866a617d1d81959f6330351f430d20e563c20f
 
     public function getDebugInfo()
     {
-        return array (  96 => 37,  92 => 36,  77 => 38,  75 => 36,  38 => 1,);
+        return array (  98 => 39,  94 => 38,  79 => 40,  77 => 38,  38 => 1,);
     }
 
     public function getSourceContext()

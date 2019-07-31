@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="/">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,15 +25,16 @@
                     <li class="nav-item">
                       <a class="nav-link" href="./post">Posts</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="./register">Register</a>
+                    </li>
+                    <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#">Disabled</a>
                     </li> -->
                   </ul>
                 </div>
               </nav>
+            </header>
     {% block body %}
     {% endblock %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -14,9 +14,11 @@ class Web
                 $route->addRoute('GET', '/', ['App\controllers\HomeController', 'index']);
                 $route->addRoute('GET', '/quienes-somos', ['App\controllers\WhoController', 'index']);
                 $route->addRoute('GET', '/donde-estamos', ['App\controllers\WhereController', 'index']);
-                $route->addRoute('GET','/hola', ['App\controllers\HolaController', 'index']);
-                $route->addRoute('GET','/users', ['App\controllers\UsersController', 'index']);
-                $route->addRoute('GET','/post', ['App\controllers\PostController', 'index']);
+                $route->addRoute('GET', '/hola', ['App\controllers\HolaController', 'index']);
+                $route->addRoute('GET', '/users', ['App\controllers\UsersController', 'index']);
+                $route->addRoute('GET', '/post', ['App\controllers\PostController', 'index']);
+                $route->addRoute('GET', '/register', ['App\controllers\auth\RegisterController', 'index']);
+                $route->addRoute('POST', '/register', ['App\controllers\auth\RegisterController', 'register']);
             }
         );
     }
