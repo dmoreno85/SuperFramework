@@ -17,12 +17,11 @@ class Routermanager
     public function dispatch(string $requestMethod, string $requestUri, \FastRoute\Dispatcher $dispatcher)
     {
         $route = $dispatcher->dispatch($requestMethod, $requestUri);
-        
+
         switch ($route[0]) {
             case \FastRoute\Dispatcher::NOT_FOUND:
                 header("HTTP/1.0 404 Not Found ");
-                echo "<h1> Not FOUND </h1>";
-
+                $this->container->call(["App\controllers\NotFoundController", "index"],[0]);
                 break;
             case \FastRoute\Dispatcher::FOUND:
                 $controller = $route[1];
@@ -31,8 +30,8 @@ class Routermanager
                 break;
 
             case  \FastRoute\Dispatcher::METHOD_NOT_ALLOWED;
-                header ("HTTP/1.0 405 Method not Allowed");
-                echo "<h1>Method Not Allowed</h1>";
+                header("HTTP/1.0 405 Method not Allowed");
+                $this->container->call(["App\controllers\NotAllowedController", "index"],[0]);
                 break;
         }
     }

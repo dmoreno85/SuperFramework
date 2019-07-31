@@ -14,7 +14,7 @@ class User extends Entity
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $id;
+    public $id;
     /**
      * @ORM\Column(type="string")
      */
